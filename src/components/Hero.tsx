@@ -47,7 +47,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="max-w-2xl text-lg text-muted-foreground font-body leading-relaxed animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            Crafting immersive gaming experiences with <span className="text-primary">Unity</span> & <span className="text-secondary">Unreal Engine</span>.
+            Crafting immersive gaming experiences with <span className="text-primary">Unity</span> & <span className="text-secondary" style={{ color: "blue" }}>Unreal Engine</span>.
           </p>
 
           {/* CTA Buttons */}
