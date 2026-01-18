@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, } from "lucide-react";
+import bgImage from "../bg-image.png";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -13,10 +13,11 @@ const Hero = () => {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `
-              linear-gradient(hsl(var(--neon-red) / 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, hsl(var(--neon-red) / 0.1) 1px, transparent 1px)
-            `,
+            // backgroundImage: `
+            //   linear-gradient(hsl(var(--neon-red) / 0.1) 1px, transparent 1px),
+            //   linear-gradient(90deg, hsl(var(--neon-red) / 0.1) 1px, transparent 1px)
+            // `,
+            backgroundImage: `url(${bgImage})`,
             backgroundSize: "50px 50px",
           }}
         />
@@ -35,10 +36,10 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight">
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight" style={{ background: 'none', WebkitTextFillColor: 'initial', animation: 'none' }}>
               <span className="text-foreground">Hi, I'm </span>
-              <span className="text-gradient">Logesh Perumal</span>
+              <span className="text-gradient animate-gradient">Logesh Perumal</span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl font-display text-muted-foreground">
               Game Developer & Software Engineer
