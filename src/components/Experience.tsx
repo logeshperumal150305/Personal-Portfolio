@@ -44,8 +44,12 @@ const Experience = () => {
               <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
                 <Briefcase className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-gradient">
+              <h2
+                className="text-2xl md:text-3xl font-display font-bold text-white relative inline-block"
+                style={{ background: 'none', WebkitTextFillColor: 'white' }}
+              >
                 Experience
+                <span className="absolute -bottom-2 left-0 w-full h-0.5 rounded-full bg-gradient-to-r from-[#ff0000] via-[#00ff00] to-[#0000ff] animate-gradient" />
               </h2>
             </div>
 
@@ -92,11 +96,15 @@ const Experience = () => {
           {/* Education */}
           <div className="space-y-8">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-lg bg-secondary/10 border border-secondary/20">
-                <GraduationCap className="w-6 h-6 text-secondary" />
+              <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                <GraduationCap className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-gradient">
+              <h2
+                className="text-2xl md:text-3xl font-display font-bold text-white relative inline-block"
+                style={{ background: 'none', WebkitTextFillColor: 'white' }}
+              >
                 Education
+                <span className="absolute -bottom-2 left-0 w-full h-0.5 rounded-full bg-gradient-to-r from-[#ff0000] via-[#00ff00] to-[#0000ff] animate-gradient" />
               </h2>
             </div>
 
@@ -110,7 +118,7 @@ const Experience = () => {
                       </h3>
                       <p className="text-primary font-body">{education.specialization}</p>
                     </div>
-                    <span className="px-3 py-1 text-sm font-display rounded-full bg-primary/10 text-primary border border-primary/20 whitespace-nowrap">
+                    <span className="px-3 py-1 text-sm font-display rounded-full bg-primary/10 text-white border border-primary/20 whitespace-nowrap">
                       CGPA: {education.cgpa}
                     </span>
                   </div>

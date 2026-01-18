@@ -50,12 +50,18 @@ const Projects = () => {
       <div className="container px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-glow bg-card/50 backdrop-blur-sm">
-            <Gamepad2 className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground font-body">Featured Work</span>
+          <div className="flex justify-center w-full">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-glow bg-card/50 backdrop-blur-sm">
+              <Gamepad2 className="w-4 h-4 text-primary" />
+              <span className="text-sm text-muted-foreground font-body">Featured Work</span>
+            </div>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gradient">
+          <h2
+            className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white relative inline-block"
+            style={{ background: 'none', WebkitTextFillColor: 'white' }}
+          >
             Game Projects
+            <span className="absolute -bottom-2 left-0 w-full h-0.5 rounded-full bg-gradient-to-r from-[#ff0000] via-[#00ff00] to-[#0000ff] animate-gradient" />
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-body">
             A showcase of games and interactive experiences I've built

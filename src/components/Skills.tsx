@@ -49,8 +49,12 @@ const Skills = () => {
       <div className="container px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gradient">
+          <h2
+            className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white relative inline-block"
+            style={{ background: 'none', WebkitTextFillColor: 'white' }}
+          >
             Technical Arsenal
+            <span className="absolute -bottom-2 left-0 w-full h-0.5 rounded-full bg-gradient-to-r from-[#ff0000] via-[#00ff00] to-[#0000ff] animate-gradient" />
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-body">
             The tools and technologies I use to bring games and software to life

@@ -13,7 +13,10 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto text-center space-y-8">
           {/* Section Header */}
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gradient">
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white"
+              style={{ background: 'none', WebkitTextFillColor: 'white' }}
+            >
               Let's Build Something Amazing
             </h2>
             <p className="text-lg text-muted-foreground font-body max-w-xl mx-auto">
