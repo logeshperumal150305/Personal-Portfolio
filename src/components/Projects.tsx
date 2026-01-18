@@ -85,7 +85,7 @@ const Projects = () => {
 
                 {/* Title & Description */}
                 <div className="space-y-3 flex-grow">
-                  <h3 className="text-2xl font-display font-bold text-foreground group-hover:text-gradient transition-all duration-300">
+                  <h3 className="text-2xl font-display font-bold text-foreground group-hover:text-gradient transition-all duration-3000">
                     {project.title}
                   </h3>
                   <p className="text-sm font-display text-primary/80">{project.subtitle}</p>
